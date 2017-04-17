@@ -15,7 +15,7 @@ import {Combatant} from './shared/combatant.model';
 export class CombatComponent implements OnInit{
   combatants: Combatant[];
 
-  cur_indx: number = 0;
+  cur_index: number;
 
   cur_combatant: Combatant;
 
@@ -42,12 +42,15 @@ export class CombatComponent implements OnInit{
         ally: false
       }
     ];
+
+    this.cur_index = 0;
+
     this.cur_combatant  = {
       id: 1,
-      name: 'Teste 1',
+      name: 'Test 1',
       cur_hp: 1,
       max_hp: 2,
-      status: 'Teste 1',
+      status: 'Test 1',
       cur_ini: 3,
       ini_bonus: 1,
       ally: true
@@ -57,13 +60,13 @@ export class CombatComponent implements OnInit{
   @ViewChild(CombatantTurnBoxComponent)
   private turnBoxComponent: CombatantTurnBoxComponent;
 
-  next() {
-    this.cur_indx = (this.cur_indx + 1) % this.combatants.length;
-    this.cur_combatant = this.combatants[this.cur_indx];
+  next(): void {
+    this.cur_index = (this.cur_index + 1) % this.combatants.length;
+    this.cur_combatant = this.combatants[this.cur_index];
     return;
   }
 
-  previous() {
+  previous(): void {
   // @todo Set cur_combatant to the previous indx
     return;
   }
