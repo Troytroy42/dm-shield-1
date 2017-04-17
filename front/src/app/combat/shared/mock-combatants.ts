@@ -8,7 +8,8 @@ export const COMBATANTS: Combatant[] = [
     max_hp: 8,
     status: 'Active',
     cur_ini: 15,
-    ini_bonus: 2
+    ini_bonus: 2,
+    ally: true
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ export const COMBATANTS: Combatant[] = [
     max_hp: 8,
     status: 'Active',
     cur_ini: 13,
-    ini_bonus: 2
+    ini_bonus: 2,
+    ally: false
   }
 ];

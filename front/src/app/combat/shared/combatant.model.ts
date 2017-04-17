@@ -6,4 +6,5 @@ export interface Combatant {
   status: string;
   cur_ini: number;
   ini_bonus: number;
+  ally: boolean;
 }
