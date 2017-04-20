@@ -1,0 +1,8 @@
+bin
+config/app.php
+config/Migrations/schema-dump-default.lock
+logs
+tmp
+vendor
+composer.lock
+
