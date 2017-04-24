@@ -4,7 +4,7 @@ import { CombatComponent }     from './combat/combat.component';
 
 const appRoutes: Routes = [
   { path: 'combat',        component: CombatComponent },
-  { path: '',   redirectTo: '/combat', pathMatch: 'full' }
+  { path: '', redirectTo: '/combat', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -24,7 +24,11 @@ class CombatantsSeed extends AbstractSeed
                 'max_hp' => 16,
                 'ini_bonus' => 2
             ),
-
+            array(
+                'name' => 'Paladin',
+                'max_hp' => 16,
+                'ini_bonus' => 2
+            ),
         );
 
         $table = $this->table('combatants');

@@ -1,15 +1,22 @@
 import { NgModule }       from '@angular/core';
 import { CommonModule }   from '@angular/common';
+import { HttpModule }    from '@angular/http';
 
-import {CombatComponent} from "./combat.component";
-import {CombatantTurnBoxComponent} from "./combatant-turn-box.component";
+import {CombatantService} from './shared/combatant.service';
+import {CombatComponent} from './combat.component';
+import {CombatantTurnBoxComponent} from './combatant-turn-box.component';
+
 @NgModule({
   imports: [
     CommonModule,
+    HttpModule
   ],
   declarations: [
+    CombatantTurnBoxComponent,
     CombatComponent,
-    CombatantTurnBoxComponent
+  ],
+  providers: [
+    CombatantService
   ]
 })
 export class CombatModule {}
