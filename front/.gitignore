@@ -12,5 +12,7 @@ e2e/**/*.js
 e2e/**/*.js.map
 _test-output
 _temp
+.htaccess
+src/.htaccess
 src/app/shared/data.service.ts
 
